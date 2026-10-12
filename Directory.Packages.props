@@ -1,0 +1,38 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Versions listed here also apply to packages that come in transitively, so they match the ones Runesmith loads. -->
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <AvaloniaVersion>12.1.4</AvaloniaVersion>
+  </PropertyGroup>
+  <ItemGroup Label="Runesmith">
+    <PackageVersion Include="Runesmith.Sdk" Version="0.2.0" />
+    <PackageVersion Include="Runesmith.Text" Version="0.2.0" />
+    <PackageVersion Include="HammerUI" Version="0.1.1" />
+  </ItemGroup>
+  <ItemGroup Label="User interface">
+    <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+  </ItemGroup>
+  <ItemGroup Label="Composition">
+    <PackageVersion Include="System.Composition.AttributedModel" Version="10.0.12" />
+    <PackageVersion Include="System.Composition.Convention" Version="10.0.12" />
+    <PackageVersion Include="System.Composition.Hosting" Version="10.0.12" />
+    <PackageVersion Include="System.Composition.Runtime" Version="10.0.12" />
+    <PackageVersion Include="System.Composition.TypedParts" Version="10.0.12" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+  </ItemGroup>
+  <ItemGroup Label="Markdown">
+    <!-- Parses Markdown and renders it to HTML for the preview; it ships with the plugin. -->
+    <PackageVersion Include="Markdig" Version="1.4.0" />
+  </ItemGroup>
+  <ItemGroup Label="Analyzers">
+    <PackageVersion Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="5.6.0" />
+  </ItemGroup>
+  <ItemGroup Label="Testing">
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageVersion Include="Microsoft.Testing.Extensions.HangDump" Version="2.5.1" />
+    <PackageVersion Include="xunit.v3" Version="4.0.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.1" />
+  </ItemGroup>
+</Project>

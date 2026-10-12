@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Markdown support for Runesmith: the language, the live preview, the outline of headings, list continuation and table formatting.</Description>
+    <!-- A plugin carries its own libraries, such as the Markdown parser, in its folder. -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <!-- Flags text users see that is written in the code instead of locales/en. -->
+    <RunesmithLocalize>true</RunesmithLocalize>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Runesmith.Markdown.Contracts\Runesmith.Markdown.Contracts.csproj" />
+    <!-- Runesmith supplies these when it loads the plugin, so they are not copied next to it. -->
+    <PackageReference Include="Runesmith.Sdk" ExcludeAssets="runtime" />
+    <PackageReference Include="Runesmith.Text" ExcludeAssets="runtime" />
+    <PackageReference Include="Markdig" />
+  </ItemGroup>
+  <!-- The TextMate grammar ships as a file beside the assembly, where MarkdownLanguage finds it. -->
+  <ItemGroup>
+    <None Include="grammars\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Runesmith.Markdown.Tests" />
+  </ItemGroup>
+</Project>

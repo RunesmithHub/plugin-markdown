@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "runesmith.markdown",
+  "name": "Markdown",
+  "version": "0.1.0",
+  "summary": "Markdown highlighting, a live preview, an outline of headings, list continuation and table formatting.",
+  "authors": [
+    "Dylan de Beer"
+  ],
+  "license": "Apache-2.0",
+  "repository": "https://github.com/RunesmithHub/plugin-markdown",
+  "runesmithApi": "^0.2.0",
+  "projects": {
+    "contracts": "src/Runesmith.Markdown.Contracts/Runesmith.Markdown.Contracts.csproj",
+    "implementation": "src/Runesmith.Markdown/Runesmith.Markdown.csproj"
+  },
+  "capabilities": [
+    {
+      "id": "filesystem",
+      "reason": "Reads the images a Markdown file shows when they are outside the open folder."
+    },
+    {
+      "id": "process",
+      "reason": "Opens the web links you click in the preview in your browser."
+    },
+    {
+      "id": "native",
+      "reason": "The Markdown parser it ships, Markdig, reads text with unsafe code."
+    }
+  ],
+  "languages": ["en"],
+  "icon": "icon.png",
+  "categories": [
+    "Languages",
+    "Documentation"
+  ],
+  "keywords": [
+    "markdown",
+    "md",
+    "preview",
+    "gfm",
+    "commonmark"
+  ]
+}

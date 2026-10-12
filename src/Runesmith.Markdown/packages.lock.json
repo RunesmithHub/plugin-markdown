@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net10.0": {
+      "Markdig": {
+        "type": "Direct",
+        "requested": "[1.4.0, )",
+        "resolved": "1.4.0",
+        "contentHash": "lLhaiI/mNDTNzgLqnmknhf4LjgTqOAyjx5+GNz0X3AxYMxUhmFppF2WVMdER+SDqwhE5wUF1pzs/cuLwFxs7xA=="
+      },
+      "Microsoft.CodeAnalysis.BannedApiAnalyzers": {
+        "type": "Direct",
+        "requested": "[5.6.0, )",
+        "resolved": "5.6.0",
+        "contentHash": "Kcobt3pnOdO0A+6CKiMHZdTEluJpsfxiV20axtZdmfBQnDmiWTKPJADlgAfdTuKNAnVarrkJa0UEGwuOo91muw=="
+      },
+      "Runesmith.Sdk": {
+        "type": "Direct",
+        "requested": "[0.2.0, )",
+        "resolved": "0.2.0",
+        "contentHash": "iDjxhU1Io8794T+lS6w25BamFvLCfm4CWEZCGwLRnmURlkrcZrO12NMZrfBiguenKeCv/qvWWLC+PhDdQo81/A==",
+        "dependencies": {
+          "Avalonia": "12.1.4",
+          "Avalonia.Fonts.Inter": "12.1.4",
+          "HammerUI": "0.1.1",
+          "Runesmith.Text": "0.2.0",
+          "System.Composition.AttributedModel": "10.0.12"
+        }
+      },
+      "Runesmith.Text": {
+        "type": "Direct",
+        "requested": "[0.2.0, )",
+        "resolved": "0.2.0",
+        "contentHash": "kH6PGoaEYbYcCERVVoqMfZTnsziJyRB2j8AusN7c9d6gH3mxNChxguuNXGPrLqEvQK+6VPC4RX7UiKjsDGdyIw=="
+      },
+      "Avalonia.BuildServices": {
+        "type": "Transitive",
+        "resolved": "11.3.2",
+        "contentHash": "qHDToxto1e3hci5YqbG9n0Ty8mlp3zBUN5wT66wKqaDVzXyQ0do3EnRILd4Ke9jpvsktaPpgE0YjEk7hornryQ=="
+      },
+      "Avalonia.Remote.Protocol": {
+        "type": "Transitive",
+        "resolved": "12.1.4",
+        "contentHash": "9ajC+Ff+U9S21JJKGbJgnwp9fY+zwJG+bSEC//o/vJU2M6IEMRGp+D1+AUoqTR79FAA/iDYgf4f4EF4PZKhZsg=="
+      },
+      "Avalonia.Themes.Fluent": {
+        "type": "Transitive",
+        "resolved": "12.1.4",
+        "contentHash": "vx7P4as07WLQqA2mhMy4iBsqhkWEGwZI7g9Rd2DlJgz3uKS2tSvY6nZqHq3sWMFDBYBT65jkTsetPrgV8oprsQ==",
+        "dependencies": {
+          "Avalonia": "12.1.4"
+        }
+      },
+      "MicroCom.Runtime": {
+        "type": "Transitive",
+        "resolved": "0.11.6",
+        "contentHash": "NdNWGDiZ6eS/Mf/9+QHR91cj1K7Hy+PX9yrHI/zM7xFYuj9IWT2uxtB6sCHjrnxAeLV9fut1R6zHDUGKX6f9lQ=="
+      },
+      "runesmith.markdown.contracts": {
+        "type": "Project"
+      },
+      "Avalonia": {
+        "type": "CentralTransitive",
+        "requested": "[12.1.4, )",
+        "resolved": "12.1.4",
+        "contentHash": "Vlz+ebY0PBVsTFXAPIpM+7ySgezMtyJ3GMMGmccHwxXXjgLF2x5+NMwO4AqrdM/lrUPZremnYNO6MSg1r1vuxw==",
+        "dependencies": {
+          "Avalonia.BuildServices": "11.3.2",
+          "Avalonia.Remote.Protocol": "12.1.4",
+          "MicroCom.Runtime": "0.11.6"
+        }
+      },
+      "Avalonia.Fonts.Inter": {
+        "type": "CentralTransitive",
+        "requested": "[12.1.4, )",
+        "resolved": "12.1.4",
+        "contentHash": "PqzIALObVJ3ZUpfYDkoNNkijaVBUGVrHqAyWPkE39aJrPukbMv49aGMhS+c5HiW1s+/iuo3fW+ISOk34GOc0iw==",
+        "dependencies": {
+          "Avalonia": "12.1.4"
+        }
+      },
+      "HammerUI": {
+        "type": "CentralTransitive",
+        "requested": "[0.1.1, )",
+        "resolved": "0.1.1",
+        "contentHash": "ibUcTm3tqUY9vUxs8lfVMW38l8VxgplkrFaJQUwXk4AAPvsvKGFuTNlHo3ENH2b1cJtxt+ncigBJ9SnX2+U3hg==",
+        "dependencies": {
+          "Avalonia": "12.1.4",
+          "Avalonia.Fonts.Inter": "12.1.4",
+          "Avalonia.Themes.Fluent": "12.1.4"
+        }
+      },
+      "System.Composition.AttributedModel": {
+        "type": "CentralTransitive",
+        "requested": "[10.0.12, )",
+        "resolved": "10.0.12",
+        "contentHash": "tl0VsgDslx5qj7S08+olVpSwhTrUuWLL3IUAGTEVUXaagHroUKifGy+tIiQkITzMDvNbDTs13GvyxgSV3G8B4w=="
+      }
+    }
+  }
+}
